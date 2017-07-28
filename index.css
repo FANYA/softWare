@@ -243,7 +243,7 @@ dd i {
   font-size: 0.83333333rem;
   color: #7b7777;
   line-height: 1.2;
-  width: 90%;
+  width: 100%;
 }
 .new-content .newsub b {
   color: #f2594b;
@@ -455,9 +455,17 @@ dd i {
 }
 .vmcarousel-centered-infitine img {
   transform: scale(0.8);
+  -ms-transform:scale(0.8);	/* IE 9 */
+-moz-transform:scale(0.8); 	/* Firefox */
+-webkit-transform:scale(0.8); /* Safari 和 Chrome */
+-o-transform:scale(0.8);
 }
 .vmcarousel-centered-infitine .vmc_active img {
   transform: scale(1);
+  -ms-transform:scale(1); 	/* IE 9 */
+-moz-transform:scale(1); 	/* Firefox */
+-webkit-transform:scale(1);/* Safari 和 Chrome */
+-o-transform:scale(1);
 }
 .views {
   width: 94.4%;
@@ -701,11 +709,15 @@ dd i {
   height: 13px;
   overflow: hidden;
   font-size: 1.3em;
-  content: "\e05d";
+  content: " ";
   display: inline-block;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  -ms-transform:translate(0, -50%);	/* IE 9 */
+-moz-transform:translate(0, -50%);	/* Firefox */
+-webkit-transform:translate(0, -50%); /* Safari 和 Chrome */
+-o-transform:translate(0, -50%); 
   text-align: center;
   background: url(img/search.png);
   background-size: 100% 100%;
@@ -792,7 +804,7 @@ video {
   width: 93%;
   background: rgba(0, 0, 0, 0.5);
   bottom: 0px;
-  padding: 0.58333333rem 1.25rem;
+  padding: 0.58333333rem 1.5rem;
 }
 #owl-demo .item .meng .boxtitle {
   font-size: 1.25rem;
